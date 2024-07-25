@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Font Awesome for icons -->
+</head>
+<body>
+  <div class="header">
+    <img src="images/logo.png" alt="Guides Logo" class="logo">
+    <input type="text" placeholder="Search for a place" class="search-bar">
+    <img src="images/profile-icon.png" alt="Profile" class="profile-icon">
+    <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
+  </div>
+
+    <div class="task-bar">
+        <button class="menu-item" onclick="showDashboard('tempat-wisata')">
+            <i class="fas fa-map-marker-alt"></i> Tempat Wisata
+        </button>
+        <button class="menu-item" onclick="showDashboard('wish-list')">
+            <i class="fas fa-heart"></i> Wish List
+        </button>
+        <button class="menu-item">
+            <i class="fas fa-briefcase"></i> Trip
+        </button>
+    </div>
+
+    <div id="tempat-wisata" class="dashboard active">
+        <div id="map">
+            <video width="100%" controls>
+                <source src="your-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+
+
+        <div class="places-list">
+            <!-- Tempat Wisata List Items -->
+            <div class="place-card">
+              <img src="images/place1.jpg" alt="Place 1" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Jakarta, Indonesia</h3>
+                <p class="place-location">Vication Type, Indonesia</p>
+                <p class="place-price">Rp20.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place2.jpg" alt="Place 2" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Bandung, Indonesia</h3>
+                <p class="place-location">Vication Type, Indonesia</p>
+                <p class="place-price">Rp50.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place3.jpg" alt="Place 3" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Bali, Indonesia</h3>
+                <p class="place-location">Vication Type, Indonesia</p>
+                <p class="place-price">Rp100.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place4.jpg" alt="Place 4" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Yogyakarta, Indonesia</h3>
+                <p class="place-location">Historical Type, Indonesia</p>
+                <p class="place-price">Rp35.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place5.jpg" alt="Tempat Wisata 5" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Medan, Indonesia</h3>
+                <p class="place-location">Vication Type , Indonesia</p>
+                <p class="place-price">Rp88.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place6.jpg" alt="Tempat Wisata 6" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Surabaya, Indonesia</h3>
+                <p class="place-location">Vication Type, Indonesia</p>
+                <p class="place-price">Rp47.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place7.jpg" alt="Tempat Wisata 7" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Malang, Indonesia</h3>
+                <p class="place-location">Vication Type, Indonesia</p>
+                <p class="place-price">Rp26.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place8.jpg" alt="Tempat Wisata 8" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Semarang, Indonesia</h3>
+                <p class="place-location">Vication Type, Indonesia</p>
+                <p class="place-price">Rp77.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place9.jpg" alt="Tempat Wisata 9" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Makassar, Indonesia</h3>
+                <p class="place-location">Vication Type, Indonesia</p>
+                <p class="place-price">Rp92.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place10.jpg" alt="Tempat Wisata 10" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Palembang, Indonesia</h3>
+                <p class="place-location">Vication Type, Indonesia</p>
+                <p class="place-price">Rp79.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place11.jpg" alt="Tempat Wisata 11" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Petra, Yordania</h3>
+                <p class="place-location">Historical Type, Yordania</p>
+                <p class="place-price">Rp139.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place12.jpg" alt="Tempat Wisata 12" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Machu Picchu, Peru</h3>
+                <p class="place-location">Vication Type, Peru</p>
+                <p class="place-price">Rp199.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place13.jpg" alt="Tempat Wisata 13" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Bora-bora, Polinesia Prancis</h3>
+                <p class="place-location">Vication Type Prancis</p>
+                <p class="place-price">Rp214.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place14.jpg" alt="Tempat Wisata 14" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Doha Corniche, Qatar</h3>
+                <p class="place-location">Vication Type, Qatar</p>
+                <p class="place-price">Rp112.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place15.jpg" alt="Tempat Wisata 15" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">The Great Barrier reef, Australia</h3>
+                <p class="place-location">Vication Type, Australia
+                </p>
+                <p class="place-price">Rp298.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place16.jpg" alt="Tempat Wisata 15" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Taj Mahal, Agra, India</h3>
+                <p class="place-location">Historic Type, India
+                </p>
+                <p class="place-price">Rp231.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place17.jpg" alt="Tempat Wisata 15" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Colosseum, Roma, Italia</h3>
+                <p class="place-location">Historic Type, Italia
+                </p>
+                <p class="place-price">Rp217.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place18.jpg" alt="Tempat Wisata 15" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Menara Miring Pisa, Italia</h3>
+                <p class="place-location">Historic Type, Italia
+                </p>
+                <p class="place-price">Rp209.000</p>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+        
+            <!-- Add more place cards here -->
+        </div>
+    </div>
+
+    <div id="wish-list" class="dashboard">
+        <div class="places-list">
+            <!-- Wish List Items -->
+            <div class="place-card">
+              <img src="images/place1.jpg" alt="Place 1" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Jakarta, Indonesia</h3>
+                <p class="place-location">Vication Type, Indonesia</p>
+                <p class="place-price">Rp20.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place2.jpg" alt="Place 2" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Bandung, Indonesia</h3>
+                <p class="place-location">Vication Type, Indonesia</p>
+                <p class="place-price">Rp50.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place3.jpg" alt="Place 3" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Bali, Indonesia</h3>
+                <p class="place-location">Vication Type, Indonesia</p>
+                <p class="place-price">Rp100.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place4.jpg" alt="Place 4" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Yogyakarta, Indonesia</h3>
+                <p class="place-location">Historical Type, Indonesia</p>
+                <p class="place-price">Rp35.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place5.jpg" alt="Tempat Wisata 5" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Medan, Indonesia</h3>
+                <p class="place-location">Vication Type , Indonesia</p>
+                <p class="place-price">Rp88.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place6.jpg" alt="Tempat Wisata 6" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Surabaya, Indonesia</h3>
+                <p class="place-location">Vication Type, Indonesia</p>
+                <p class="place-price">Rp47.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place7.jpg" alt="Tempat Wisata 7" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Malang, Indonesia</h3>
+                <p class="place-location">Vication Type, Indonesia</p>
+                <p class="place-price">Rp26.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place8.jpg" alt="Tempat Wisata 8" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Semarang, Indonesia</h3>
+                <p class="place-location">Vication Type, Indonesia</p>
+                <p class="place-price">Rp77.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place9.jpg" alt="Tempat Wisata 9" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Makassar, Indonesia</h3>
+                <p class="place-location">Vication Type, Indonesia</p>
+                <p class="place-price">Rp92.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place10.jpg" alt="Tempat Wisata 10" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Palembang, Indonesia</h3>
+                <p class="place-location">Vication Type, Indonesia</p>
+                <p class="place-price">Rp79.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place11.jpg" alt="Tempat Wisata 11" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Petra, Yordania</h3>
+                <p class="place-location">Historical Type, Yordania</p>
+                <p class="place-price">Rp139.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place12.jpg" alt="Tempat Wisata 12" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Machu Picchu, Peru</h3>
+                <p class="place-location">Vication Type, Peru</p>
+                <p class="place-price">Rp199.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place13.jpg" alt="Tempat Wisata 13" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Bora-bora, Polinesia Prancis</h3>
+                <p class="place-location">Vication Type Prancis</p>
+                <p class="place-price">Rp214.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place14.jpg" alt="Tempat Wisata 14" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Doha Corniche, Qatar</h3>
+                <p class="place-location">Vication Type, Qatar</p>
+                <p class="place-price">Rp112.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place15.jpg" alt="Tempat Wisata 15" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">The Great Barrier reef, Australia</h3>
+                <p class="place-location">Vication Type, Australia
+                </p>
+                <p class="place-price">Rp298.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place16.jpg" alt="Tempat Wisata 15" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Taj Mahal, Agra, India</h3>
+                <p class="place-location">Historic Type, India
+                </p>
+                <p class="place-price">Rp231.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place17.jpg" alt="Tempat Wisata 15" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Colosseum, Roma, Italia</h3>
+                <p class="place-location">Historic Type, Italia
+                </p>
+                <p class="place-price">Rp217.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img src="images/place18.jpg" alt="Tempat Wisata 15" class="place-image">
+              <div class="place-info">
+                <h3 class="place-name">Menara Miring Pisa, Italia</h3>
+                <p class="place-location">Historic Type, Italia
+                </p>
+                <p class="place-price">Rp209.000</p>
+                <button class="wishlist-button"> Remove ..................</button>
+                <button class="wishlist-button"> Go Trip!!!</button>
+              </div>
+            </div>
+
+            <div id="trip" class="dashboard">
+              <!-- Isi trip -->
+          </div>
+    <script src="script.js"></script>
+</body>
+</html>
